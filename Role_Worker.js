@@ -3,7 +3,11 @@ const logger = require('utils.log').getLogger("Worker");
 function getSource(creep) {
     let source = null;
     if (creep.room.memory.direction === "Out") {
-        source = Game.getObjectById(creep.room.getFactory());
+        var get_factory = getFactory();
+        if (get_factory == undefined){
+            return null;
+        }
+        source = Game.getObjectById(creep.room.get_factory);
     } else if (creep.room.memory.direction === "In") {
         source = creep.room.storage;
     }
