@@ -3,10 +3,6 @@ const logger = require('utils.log').getLogger("Worker");
 function getSource(creep) {
     let source = null;
     if (creep.room.memory.direction === "Out") {
-        var get_factory = getFactory();
-        if (get_factory == undefined){
-            return null;
-        }
         source = Game.getObjectById(creep.room.getFactory());
     } else if (creep.room.memory.direction === "In") {
         source = creep.room.storage;
@@ -19,10 +15,6 @@ function getTarget(creep){
     if (creep.room.memory.direction === "Out") {
         target = creep.room.terminal;
     } else if (creep.room.memory.direction === "In") {
-        var get_factory = getFactory();
-        if (get_factory == undefined){
-            return null;
-        }
         target = Game.getObjectById(creep.room.getFactory());
     }
     return target;
