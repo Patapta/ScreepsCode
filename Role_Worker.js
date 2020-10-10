@@ -2,14 +2,12 @@ const logger = require('utils.log').getLogger("Worker");
 
 function getSource(creep) {
     let source = null;
-    console.log(123);
-    return 1;
-    // if (creep.room.memory.direction === "Out") {
-    //     source = Game.getObjectById(creep.room.getFactory());
-    // } else if (creep.room.memory.direction === "In") {
-    //     source = creep.room.storage;
-    // }
-    // return source;
+    if (creep.room.memory.direction === "Out") {
+        source = Game.getObjectById(creep.room.getFactory());
+    } else if (creep.room.memory.direction === "In") {
+        source = creep.room.storage;
+    }
+    return source;
 }
 
 function getTarget(creep){
