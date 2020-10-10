@@ -20,63 +20,61 @@ const worker = require('Role_Worker')
 
 module.exports = {
 
-    Harvester_E6S22_0: harvester,
-    Harvester_E6S22_1: harvester,
-
-    Harvester_E9S21_0: harvester,
-    Harvester_E9S21_1: harvester,
-
-    Harvester_E8S23_0: harvester,
-    Harvester_E8S23_1: harvester,
-
-    Harvester_E8S25_0: harvester,
-    Harvester_E8S25_1: harvester,
-
-    Harvester_E9S23_0: harvester,
-    Harvester_E9S23_1: harvester,
-
-    Harvester_E8S26_0: harvester,
-    Harvester_E8S26_1: harvester,
-
-    Harvester_E7S22_0: harvester,
-    Harvester_E7S22_1: harvester,
-
-    Harvester_E5S21_0: harvester,
-    Harvester_E5S21_1: harvester,
-
-    Harvester_E7S21_0: harvester,
-    Harvester_E7S21_1: harvester,
-
-    Mover_E6S22_2: mover,
-    Mover_02: mover,
-    Mover_03: mover,
-    Mover_E8S25: mover,
-    Mover_E9S23: mover,
-    Mover_E8S26: mover,
-    Mover_E7S22: mover,
-
-    Upgrader_E6S22_1: upgrader,
-    Upgrader_E9S21_1: upgrader,
-    Upgrader_E8S23_1: upgrader,
-    Upgrader_E8S25_1: upgrader,
-    Upgrader_E9S23_1: upgrader,
-    Upgrader_E8S26_1: upgrader,
-    Upgrader_E7S22_1: upgrader,
-
-    Builder_E6S22: builder,
-    Builder_E9S21: builder,
-    Builder_E8S23: builder,
-    Builder_E8S25: builder,
-    Builder_E9S23: builder,
-    Builder_E8S26: builder,
-    Builder_E7S22: builder,
-
-    Worker_E6S22: worker,
-    //Worker_E9S21: worker,
-    Worker_E8S23: worker,
-    Worker_E8S25: worker,
-    Worker_E9S23: worker,
-    //Worker_E8S26: worker,
+    // Harvester_E6S22_0: harvester,
+    // Harvester_E6S22_1: harvester,
+    //
+    // Harvester_E9S21_0: harvester,
+    // Harvester_E9S21_1: harvester,
+    //
+    // Harvester_E8S23_0: harvester,
+    // Harvester_E8S23_1: harvester,
+    //
+    // Harvester_E8S25_0: harvester,
+    // Harvester_E8S25_1: harvester,
+    //
+    // Harvester_E9S23_0: harvester,
+    // Harvester_E9S23_1: harvester,
+    //
+    // Harvester_E8S26_0: harvester,
+    // Harvester_E8S26_1: harvester,
+    //
+    // Harvester_E7S22_0: harvester,
+    // Harvester_E7S22_1: harvester,
+    //
+    // Harvester_E5S21_0: harvester,
+    // Harvester_E5S21_1: harvester,
+    //
+    // Harvester_E7S21_0: harvester,
+    // Harvester_E7S21_1: harvester,
+    //
+    // Mover_E6S22_2: mover,
+    // Mover_02: mover,
+    // Mover_03: mover,
+    // Mover_E8S25: mover,
+    // Mover_E9S23: mover,
+    // Mover_E8S26: mover,
+    // Mover_E7S22: mover,
+    //
+    // Upgrader_E6S22_1: upgrader,
+    // Upgrader_E9S21_1: upgrader,
+    // Upgrader_E8S23_1: upgrader,
+    // Upgrader_E8S25_1: upgrader,
+    // Upgrader_E9S23_1: upgrader,
+    // Upgrader_E8S26_1: upgrader,
+    // Upgrader_E7S22_1: upgrader,
+    //
+    // Builder_E6S22: builder,
+    // Builder_E9S21: builder,
+    // Builder_E8S23: builder,
+    // Builder_E8S25: builder,
+    // Builder_E9S23: builder,
+    // Builder_E8S26: builder,
+    // Builder_E7S22: builder,
+    //
+    // Worker_E6S22: worker,
+    // Worker_E8S23: worker,
+    // Worker_E8S25: worker,
+    // Worker_E9S23: worker,
 
     /**
      *   Miner配置文件
