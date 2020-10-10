@@ -9,8 +9,7 @@ function factoryWork() {
     }
     for (let roomName in CONFIG_FACTORY) {
         const room = Game.rooms[roomName];
-        console.log(123);
-        // const factory = Game.getObjectById(Game.rooms[roomName].getFactory());
+        const factory = Game.getObjectById(Game.rooms[roomName].getFactory());
         //当前没有生产产品,根据工厂内所含资源开始指派生产产品
         if (!Game.rooms[roomName].memory.production) {
             let production = null;
