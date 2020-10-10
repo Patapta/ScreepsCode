@@ -15,7 +15,11 @@ function getTarget(creep){
     if (creep.room.memory.direction === "Out") {
         target = creep.room.terminal;
     } else if (creep.room.memory.direction === "In") {
-        target = Game.getObjectById(creep.room.getFactory());
+        var get_factory = getFactory();
+        if (get_factory == undefined){
+            return null;
+        }
+        target = Game.getObjectById(creep.room.get_factory);
     }
     return target;
 }
