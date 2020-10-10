@@ -1,8 +1,8 @@
 module.exports = {
 
     // //所辖Room(已Claim的房间)
-    // CLAIM_ROOM: ["E6S8"],
-    //
+    CLAIM_ROOM: ["E6S8"],
+
     // E6S22: ({
     //     BUILDER: ['Builder_E6S22'],
     //     STORAGE: ['']
