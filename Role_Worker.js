@@ -7,7 +7,7 @@ function getSource(creep) {
         if (get_factory == undefined){
             return null;
         }
-        source = Game.getObjectById(creep.room.get_factory);
+        source = Game.getObjectById(creep.room.getFactory());
     } else if (creep.room.memory.direction === "In") {
         source = creep.room.storage;
     }
@@ -23,7 +23,7 @@ function getTarget(creep){
         if (get_factory == undefined){
             return null;
         }
-        target = Game.getObjectById(creep.room.get_factory);
+        target = Game.getObjectById(creep.room.getFactory());
     }
     return target;
 }
